@@ -1,0 +1,13 @@
+import sys
+sequence=sys.argv[1]
+sequence=sequence.upper()
+Acount=sequence.count('A')
+Gcount=sequence.count('G')
+Ccount=sequence.count('C')
+Tcount=sequence.count('T')
+basecounts = {'A': Acount, 'G':Gcount, 'C':Ccount, 'T':Tcount}
+print basecounts
+numbases= Acount + Gcount + Ccount + Tcount
+print numbases
+GCcontent = ((Gcount + Ccount) / float(numbases)) *100
+print str(GCcontent) + "%"
