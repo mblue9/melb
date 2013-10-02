@@ -1,3 +1,4 @@
+#testing exceptions
 file_name = "test.csv"
 default_file = "rodents.csv"
 
